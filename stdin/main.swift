@@ -1,6 +1,6 @@
 
 extension String: CollectionType {
-    static func getValues() -> [String] {
-        return readLine()!.split(" ")
+    static func getValues(separator: Character = " ") -> [String] {
+        return readLine()!.split(separator)
     }
 }
