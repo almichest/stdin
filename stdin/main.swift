@@ -1,6 +1,10 @@
+extension String: CollectionType { }
 
-extension String: CollectionType {
-    static func getValues(separator: Character = " ") -> [String] {
-        return readLine()!.split(separator)
-    }
+func getValues(separator: Character = " ") -> [String] {
+    return readLine()!.split(separator)
 }
+
+func getIntValues() -> [Int] {
+    return getValues().map { Int($0)! }
+}
+
