@@ -1,10 +1,11 @@
 extension String: Collection { }
+typealias I = Int64
 
 func getValues(_ separator: Character = " ") -> [String] {
     return readLine()!.split(separator: separator)
 }
 
-func getIntValues() -> [Int64] {
-    return getValues().map { Int64($0)! }
+func getIntValues() -> [I] {
+    return getValues().map { I($0)! }
 }
 
