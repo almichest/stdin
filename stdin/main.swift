@@ -1,3 +1,5 @@
+import Foundation
+
 extension String: Collection { }
 typealias I = Int64
 
